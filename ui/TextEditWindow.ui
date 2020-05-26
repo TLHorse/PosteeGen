@@ -23,7 +23,7 @@
    </size>
   </property>
   <property name="windowTitle">
-   <string>Dialog</string>
+   <string notr="true">新海报 - 文字设置</string>
   </property>
   <widget class="QPushButton" name="continueButton">
    <property name="geometry">
@@ -52,7 +52,7 @@
     <bool>false</bool>
    </property>
   </widget>
-  <widget class="QTextEdit" name="textEdit">
+  <widget class="QTextEdit" name="textEdit_1">
    <property name="geometry">
     <rect>
      <x>40</x>
@@ -67,11 +67,14 @@
      <pointsize>16</pointsize>
     </font>
    </property>
+   <property name="cursor" stdset="0">
+    <cursorShape>IBeamCursor</cursorShape>
+   </property>
    <property name="placeholderText">
     <string>在这里输入手抄报第1分区的正文。</string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="lineEdit">
+  <widget class="QLineEdit" name="titleInput">
    <property name="geometry">
     <rect>
      <x>300</x>
@@ -82,8 +85,8 @@
    </property>
    <property name="font">
     <font>
-     <family>Avenir Next</family>
-     <pointsize>18</pointsize>
+     <family>Avenir Next Condensed</family>
+     <pointsize>20</pointsize>
     </font>
    </property>
    <property name="toolTip">
@@ -111,6 +114,9 @@
      <pointsize>16</pointsize>
     </font>
    </property>
+   <property name="cursor" stdset="0">
+    <cursorShape>IBeamCursor</cursorShape>
+   </property>
    <property name="placeholderText">
     <string>在这里输入手抄报第2分区的正文。</string>
    </property>
@@ -130,6 +136,9 @@
      <pointsize>16</pointsize>
     </font>
    </property>
+   <property name="cursor" stdset="0">
+    <cursorShape>IBeamCursor</cursorShape>
+   </property>
    <property name="placeholderText">
     <string>在这里输入手抄报第3分区的正文。</string>
    </property>
@@ -148,6 +157,9 @@
      <family>Avenir Next</family>
      <pointsize>16</pointsize>
     </font>
+   </property>
+   <property name="cursor" stdset="0">
+    <cursorShape>IBeamCursor</cursorShape>
    </property>
    <property name="placeholderText">
     <string>在这里输入手抄报第4分区的正文。</string>
@@ -218,14 +230,104 @@
     <bool>false</bool>
    </property>
   </widget>
+  <widget class="QFontComboBox" name="titleFontBox">
+   <property name="geometry">
+    <rect>
+     <x>720</x>
+     <y>31</y>
+     <width>208</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Avenir Next</family>
+    </font>
+   </property>
+   <property name="toolTip">
+    <string>手抄报标题的字体。如果你需要的字体没有在下拉菜单中出现，请手动输入字体名称。</string>
+   </property>
+   <property name="fontFilters">
+    <set>QFontComboBox::AllFonts</set>
+   </property>
+  </widget>
+  <widget class="QFontComboBox" name="textFontBox">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>680</y>
+     <width>208</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Avenir Next</family>
+    </font>
+   </property>
+   <property name="toolTip">
+    <string>手抄报正文的字体。如果你需要的字体没有在下拉菜单中出现，请手动输入字体名称。</string>
+   </property>
+   <property name="fontFilters">
+    <set>QFontComboBox::AllFonts</set>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="textPointsSpinBox">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>690</y>
+     <width>42</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>手抄报正文的字体大小，在10～40之间。</string>
+   </property>
+   <property name="minimum">
+    <number>10</number>
+   </property>
+   <property name="maximum">
+    <number>40</number>
+   </property>
+   <property name="value">
+    <number>18</number>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="titlePointsSpinBox">
+   <property name="geometry">
+    <rect>
+     <x>930</x>
+     <y>40</y>
+     <width>42</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>手抄报标题的字体大小，在10～40之间。</string>
+   </property>
+   <property name="minimum">
+    <number>10</number>
+   </property>
+   <property name="maximum">
+    <number>40</number>
+   </property>
+   <property name="value">
+    <number>18</number>
+   </property>
+  </widget>
   <zorder>backgroundLabel</zorder>
   <zorder>continueButton</zorder>
-  <zorder>textEdit</zorder>
-  <zorder>lineEdit</zorder>
+  <zorder>textEdit_1</zorder>
+  <zorder>titleInput</zorder>
   <zorder>textEdit_2</zorder>
   <zorder>textEdit_3</zorder>
   <zorder>textEdit_4</zorder>
   <zorder>cancelButton</zorder>
+  <zorder>titleFontBox</zorder>
+  <zorder>textFontBox</zorder>
+  <zorder>textPointsSpinBox</zorder>
+  <zorder>titlePointsSpinBox</zorder>
  </widget>
  <resources/>
  <connections>

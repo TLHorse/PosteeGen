@@ -1,0 +1,8 @@
+<RCC>
+  <qresource prefix="images">
+    <file>pgen_temp_2.png</file>
+    <file>pgen_temp_3.png</file>
+    <file>pgen_temp_4.png</file>
+    <file>pgen_temp_1.png</file>
+  </qresource>
+</RCC>
