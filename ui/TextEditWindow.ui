@@ -52,28 +52,6 @@
     <bool>false</bool>
    </property>
   </widget>
-  <widget class="QTextEdit" name="textEdit_1">
-   <property name="geometry">
-    <rect>
-     <x>40</x>
-     <y>100</y>
-     <width>441</width>
-     <height>271</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>Avenir Next</family>
-     <pointsize>16</pointsize>
-    </font>
-   </property>
-   <property name="cursor" stdset="0">
-    <cursorShape>IBeamCursor</cursorShape>
-   </property>
-   <property name="placeholderText">
-    <string>在这里输入手抄报第1分区的正文。</string>
-   </property>
-  </widget>
   <widget class="QLineEdit" name="titleInput">
    <property name="geometry">
     <rect>
@@ -97,72 +75,6 @@
    </property>
    <property name="placeholderText">
     <string>手抄报标题</string>
-   </property>
-  </widget>
-  <widget class="QTextEdit" name="textEdit_2">
-   <property name="geometry">
-    <rect>
-     <x>520</x>
-     <y>100</y>
-     <width>441</width>
-     <height>271</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>Avenir Next</family>
-     <pointsize>16</pointsize>
-    </font>
-   </property>
-   <property name="cursor" stdset="0">
-    <cursorShape>IBeamCursor</cursorShape>
-   </property>
-   <property name="placeholderText">
-    <string>在这里输入手抄报第2分区的正文。</string>
-   </property>
-  </widget>
-  <widget class="QTextEdit" name="textEdit_3">
-   <property name="geometry">
-    <rect>
-     <x>40</x>
-     <y>390</y>
-     <width>441</width>
-     <height>271</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>Avenir Next</family>
-     <pointsize>16</pointsize>
-    </font>
-   </property>
-   <property name="cursor" stdset="0">
-    <cursorShape>IBeamCursor</cursorShape>
-   </property>
-   <property name="placeholderText">
-    <string>在这里输入手抄报第3分区的正文。</string>
-   </property>
-  </widget>
-  <widget class="QTextEdit" name="textEdit_4">
-   <property name="geometry">
-    <rect>
-     <x>520</x>
-     <y>390</y>
-     <width>441</width>
-     <height>271</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>Avenir Next</family>
-     <pointsize>16</pointsize>
-    </font>
-   </property>
-   <property name="cursor" stdset="0">
-    <cursorShape>IBeamCursor</cursorShape>
-   </property>
-   <property name="placeholderText">
-    <string>在这里输入手抄报第4分区的正文。</string>
    </property>
   </widget>
   <widget class="QLabel" name="backgroundLabel">
@@ -316,18 +228,109 @@
     <number>18</number>
    </property>
   </widget>
+  <widget class="QPlainTextEdit" name="textEdit_3">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>390</y>
+     <width>441</width>
+     <height>271</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Avenir Next</family>
+     <pointsize>16</pointsize>
+    </font>
+   </property>
+   <property name="cursor" stdset="0">
+    <cursorShape>IBeamCursor</cursorShape>
+   </property>
+   <property name="placeholderText">
+    <string>在这里输入手抄报第3分区的正文。</string>
+   </property>
+  </widget>
+  <widget class="QPlainTextEdit" name="textEdit_4">
+   <property name="geometry">
+    <rect>
+     <x>520</x>
+     <y>390</y>
+     <width>441</width>
+     <height>271</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Avenir Next</family>
+     <pointsize>16</pointsize>
+    </font>
+   </property>
+   <property name="cursor" stdset="0">
+    <cursorShape>IBeamCursor</cursorShape>
+   </property>
+   <property name="placeholderText">
+    <string>在这里输入手抄报第4分区的正文。</string>
+   </property>
+  </widget>
+  <widget class="QPlainTextEdit" name="textEdit_2">
+   <property name="geometry">
+    <rect>
+     <x>520</x>
+     <y>100</y>
+     <width>441</width>
+     <height>271</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Avenir Next</family>
+     <pointsize>16</pointsize>
+    </font>
+   </property>
+   <property name="cursor" stdset="0">
+    <cursorShape>IBeamCursor</cursorShape>
+   </property>
+   <property name="placeholderText">
+    <string>在这里输入手抄报第2分区的正文。</string>
+   </property>
+  </widget>
+  <widget class="QPlainTextEdit" name="textEdit_1">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>100</y>
+     <width>441</width>
+     <height>271</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Avenir Next</family>
+     <pointsize>16</pointsize>
+    </font>
+   </property>
+   <property name="cursor" stdset="0">
+    <cursorShape>IBeamCursor</cursorShape>
+   </property>
+   <property name="plainText">
+    <string/>
+   </property>
+   <property name="placeholderText">
+    <string>在这里输入手抄报第1分区的正文。</string>
+   </property>
+  </widget>
   <zorder>backgroundLabel</zorder>
   <zorder>continueButton</zorder>
-  <zorder>textEdit_1</zorder>
   <zorder>titleInput</zorder>
-  <zorder>textEdit_2</zorder>
-  <zorder>textEdit_3</zorder>
-  <zorder>textEdit_4</zorder>
   <zorder>cancelButton</zorder>
   <zorder>titleFontBox</zorder>
   <zorder>textFontBox</zorder>
   <zorder>textPointsSpinBox</zorder>
   <zorder>titlePointsSpinBox</zorder>
+  <zorder>textEdit_3</zorder>
+  <zorder>textEdit_4</zorder>
+  <zorder>textEdit_2</zorder>
+  <zorder>textEdit_1</zorder>
  </widget>
  <resources/>
  <connections>

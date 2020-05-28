@@ -1,12 +1,4 @@
 # -*- coding: utf-8 -*-
-
-# Form implementation generated from reading ui file 'CheckArgsWindow.ui'
-#
-# Created by: PyQt5 UI code generator 5.14.2
-#
-# WARNING! All changes made in this file will be lost!
-
-
 from PyQt5 import QtCore, QtGui, QtWidgets
 
 
@@ -74,15 +66,15 @@ class Ui_Dialog(object):
         self.continueButton.setDefault(True)
         self.continueButton.setFlat(False)
         self.continueButton.setObjectName("continueButton")
-        self.cancelButton = QtWidgets.QPushButton(Dialog)
-        self.cancelButton.setGeometry(QtCore.QRect(790, 690, 81, 32))
+        self.backButton = QtWidgets.QPushButton(Dialog)
+        self.backButton.setGeometry(QtCore.QRect(790, 690, 81, 32))
         font = QtGui.QFont()
         font.setFamily("Avenir Next")
-        self.cancelButton.setFont(font)
-        self.cancelButton.setAutoDefault(False)
-        self.cancelButton.setDefault(False)
-        self.cancelButton.setFlat(False)
-        self.cancelButton.setObjectName("cancelButton")
+        self.backButton.setFont(font)
+        self.backButton.setAutoDefault(False)
+        self.backButton.setDefault(False)
+        self.backButton.setFlat(False)
+        self.backButton.setObjectName("backButton")
         self.label = QtWidgets.QLabel(Dialog)
         self.label.setGeometry(QtCore.QRect(130, 160, 75, 16))
         palette = QtGui.QPalette()
@@ -269,6 +261,9 @@ class Ui_Dialog(object):
         font.setFamily("Avenir Next")
         font.setPointSize(16)
         self.part1Label.setFont(font)
+        self.part1Label.setTextFormat(QtCore.Qt.PlainText)
+        self.part1Label.setWordWrap(False)
+        self.part1Label.setTextInteractionFlags(QtCore.Qt.NoTextInteraction)
         self.part1Label.setObjectName("part1Label")
         self.part2Label = QtWidgets.QLabel(Dialog)
         self.part2Label.setGeometry(QtCore.QRect(210, 260, 661, 16))
@@ -287,6 +282,9 @@ class Ui_Dialog(object):
         font.setFamily("Avenir Next")
         font.setPointSize(16)
         self.part2Label.setFont(font)
+        self.part2Label.setTextFormat(QtCore.Qt.PlainText)
+        self.part2Label.setWordWrap(False)
+        self.part2Label.setTextInteractionFlags(QtCore.Qt.NoTextInteraction)
         self.part2Label.setObjectName("part2Label")
         self.part3Label = QtWidgets.QLabel(Dialog)
         self.part3Label.setGeometry(QtCore.QRect(210, 310, 661, 16))
@@ -305,6 +303,9 @@ class Ui_Dialog(object):
         font.setFamily("Avenir Next")
         font.setPointSize(16)
         self.part3Label.setFont(font)
+        self.part3Label.setTextFormat(QtCore.Qt.PlainText)
+        self.part3Label.setWordWrap(False)
+        self.part3Label.setTextInteractionFlags(QtCore.Qt.NoTextInteraction)
         self.part3Label.setObjectName("part3Label")
         self.part4Label = QtWidgets.QLabel(Dialog)
         self.part4Label.setGeometry(QtCore.QRect(210, 360, 661, 16))
@@ -323,6 +324,9 @@ class Ui_Dialog(object):
         font.setFamily("Avenir Next")
         font.setPointSize(16)
         self.part4Label.setFont(font)
+        self.part4Label.setTextFormat(QtCore.Qt.PlainText)
+        self.part4Label.setWordWrap(False)
+        self.part4Label.setTextInteractionFlags(QtCore.Qt.NoTextInteraction)
         self.part4Label.setObjectName("part4Label")
         self.titleFontDesLabel = QtWidgets.QLabel(Dialog)
         self.titleFontDesLabel.setGeometry(QtCore.QRect(210, 410, 281, 16))
@@ -361,6 +365,8 @@ class Ui_Dialog(object):
         self.textFontDesLabel.setFont(font)
         self.textFontDesLabel.setObjectName("textFontDesLabel")
 
+        self.backButton.clicked.connect(self.close)
+
         self.retranslateUi(Dialog)
         QtCore.QMetaObject.connectSlotsByName(Dialog)
 
@@ -369,8 +375,8 @@ class Ui_Dialog(object):
         Dialog.setWindowTitle(_translate("Dialog", "新海报 | 检查参数"))
         self.titleLabel.setText(_translate("Dialog", "检查手抄报的参数。"))
         self.descriptionLabel.setText(_translate("Dialog", "确保你的生成参数无误。"))
-        self.continueButton.setText(_translate("Dialog", "继续"))
-        self.cancelButton.setText(_translate("Dialog", "返回"))
+        self.continueButton.setText(_translate("Dialog", "生成"))
+        self.backButton.setText(_translate("Dialog", "返回"))
         self.label.setText(_translate("Dialog", "标题："))
         self.label_2.setText(_translate("Dialog", "第一分区："))
         self.label_3.setText(_translate("Dialog", "第二分区："))
@@ -378,10 +384,10 @@ class Ui_Dialog(object):
         self.label_5.setText(_translate("Dialog", "第四分区："))
         self.label_6.setText(_translate("Dialog", "标题字体："))
         self.label_7.setText(_translate("Dialog", "正文字体："))
-        self.titleDesLabel.setText(_translate("Dialog", "《标题》"))
-        self.part1Label.setText(_translate("Dialog", "《标题》"))
-        self.part2Label.setText(_translate("Dialog", "《标题》"))
-        self.part3Label.setText(_translate("Dialog", "《标题》"))
-        self.part4Label.setText(_translate("Dialog", "《标题》"))
-        self.titleFontDesLabel.setText(_translate("Dialog", "titleFontLabel"))
-        self.textFontDesLabel.setText(_translate("Dialog", "《标题》"))
+        self.titleDesLabel.setText(_translate("Dialog", "新冠疫情手抄报"))
+        self.part1Label.setText(_translate("Dialog", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ut dapibus est. Vivamus accumsan volutpat vehicula."))
+        self.part2Label.setText(_translate("Dialog", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ut dapibus est. Vivamus accumsan volutpat vehicula."))
+        self.part3Label.setText(_translate("Dialog", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ut dapibus est. Vivamus accumsan volutpat vehicula."))
+        self.part4Label.setText(_translate("Dialog", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ut dapibus est. Vivamus accumsan volutpat vehicula."))
+        self.titleFontDesLabel.setText(_translate("Dialog", "华文行楷"))
+        self.textFontDesLabel.setText(_translate("Dialog", "陈静的字完整版"))

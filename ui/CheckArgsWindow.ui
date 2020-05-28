@@ -190,7 +190,7 @@
     </font>
    </property>
    <property name="text">
-    <string>继续</string>
+    <string>生成</string>
    </property>
    <property name="autoDefault">
     <bool>true</bool>
@@ -202,7 +202,7 @@
     <bool>false</bool>
    </property>
   </widget>
-  <widget class="QPushButton" name="cancelButton">
+  <widget class="QPushButton" name="backButton">
    <property name="geometry">
     <rect>
      <x>790</x>
@@ -739,7 +739,7 @@
     </font>
    </property>
    <property name="text">
-    <string>《标题》</string>
+    <string>新冠疫情手抄报</string>
    </property>
   </widget>
   <widget class="QLabel" name="part1Label">
@@ -795,7 +795,16 @@
     </font>
    </property>
    <property name="text">
-    <string>《标题》</string>
+    <string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ut dapibus est. Vivamus accumsan volutpat vehicula.</string>
+   </property>
+   <property name="textFormat">
+    <enum>Qt::PlainText</enum>
+   </property>
+   <property name="wordWrap">
+    <bool>false</bool>
+   </property>
+   <property name="textInteractionFlags">
+    <set>Qt::NoTextInteraction</set>
    </property>
   </widget>
   <widget class="QLabel" name="part2Label">
@@ -851,7 +860,16 @@
     </font>
    </property>
    <property name="text">
-    <string>《标题》</string>
+    <string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ut dapibus est. Vivamus accumsan volutpat vehicula.</string>
+   </property>
+   <property name="textFormat">
+    <enum>Qt::PlainText</enum>
+   </property>
+   <property name="wordWrap">
+    <bool>false</bool>
+   </property>
+   <property name="textInteractionFlags">
+    <set>Qt::NoTextInteraction</set>
    </property>
   </widget>
   <widget class="QLabel" name="part3Label">
@@ -907,7 +925,16 @@
     </font>
    </property>
    <property name="text">
-    <string>《标题》</string>
+    <string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ut dapibus est. Vivamus accumsan volutpat vehicula.</string>
+   </property>
+   <property name="textFormat">
+    <enum>Qt::PlainText</enum>
+   </property>
+   <property name="wordWrap">
+    <bool>false</bool>
+   </property>
+   <property name="textInteractionFlags">
+    <set>Qt::NoTextInteraction</set>
    </property>
   </widget>
   <widget class="QLabel" name="part4Label">
@@ -963,7 +990,16 @@
     </font>
    </property>
    <property name="text">
-    <string>《标题》</string>
+    <string>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ut dapibus est. Vivamus accumsan volutpat vehicula.</string>
+   </property>
+   <property name="textFormat">
+    <enum>Qt::PlainText</enum>
+   </property>
+   <property name="wordWrap">
+    <bool>false</bool>
+   </property>
+   <property name="textInteractionFlags">
+    <set>Qt::NoTextInteraction</set>
    </property>
   </widget>
   <widget class="QLabel" name="titleFontDesLabel">
@@ -1019,7 +1055,7 @@
     </font>
    </property>
    <property name="text">
-    <string>titleFontLabel</string>
+    <string>华文行楷</string>
    </property>
   </widget>
   <widget class="QLabel" name="textFontDesLabel">
@@ -1075,7 +1111,7 @@
     </font>
    </property>
    <property name="text">
-    <string>《标题》</string>
+    <string>陈静的字完整版</string>
    </property>
   </widget>
  </widget>
