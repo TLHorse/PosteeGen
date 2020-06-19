@@ -6,14 +6,14 @@ class PosterArrangement:
     """
 
     posterTitle: str = "手抄报标题"
-    part1text: str = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ut dapibus est. Vivamus accumsan volutpat vehicula."
-    part2text: str = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ut dapibus est. Vivamus accumsan volutpat vehicula."
-    part3text: str = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ut dapibus est. Vivamus accumsan volutpat vehicula."
-    part4text: str = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ut dapibus est. Vivamus accumsan volutpat vehicula."
+    part1Text: str = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ut dapibus est. Vivamus accumsan volutpat vehicula."
+    part2Text: str = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ut dapibus est. Vivamus accumsan volutpat vehicula."
+    part3Text: str = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ut dapibus est. Vivamus accumsan volutpat vehicula."
+    part4Text: str = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ut dapibus est. Vivamus accumsan volutpat vehicula."
 
     posterTitleFont: str = "黑体"
+    posterTitleSize: int = 100
     posterTextFont: str = "黑体"
-    posterTitleSize: int = 16
-    posterTextSize: int = 16
+    posterTextSize: int = 20
 
     template: int = 1

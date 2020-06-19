@@ -3,10 +3,10 @@ import sys
 from PyQt5 import QtGui
 from PyQt5.QtWidgets import QApplication, QMainWindow
 
-from PosterArrangement import *
+import PosterArrangement
 from WindowManager import *
 
-posterArngModel = PosterArrangement()
+posterArngModel = PosterArrangement.PosterArrangement()
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)
@@ -33,7 +33,6 @@ if __name__ == '__main__':
         posterArngModel.posterTextFont = textEditWindow.textFontBox.currentText()
         posterArngModel.posterTitleSize = textEditWindow.titlePointsSpinBox.value()
         posterArngModel.posterTextSize = textEditWindow.textPointsSpinBox.value()
-        # chooseTemplateWindow.show()
 
     textEditWindow.continueButton.clicked.connect(lambda: chooseTemplateWindow.showWith(setTextEditInfo))
     # Font family method
@@ -54,9 +53,10 @@ textEditWindow.textPointsSpinBox.valueChanged.connect(
 
     ##### chooseTemplateWindow method #####
 
-    def setTemplateInfo():
+    def setTemplateInfoAndSubmitModel():
         global checkArgsWindow, chooseTemplateWindow, posterArngModel
-        posterArngModel.template = list(chooseTemplateWindow.currentChooseLabel.text())[5]
+        posterArngModel.template = int(list(chooseTemplateWindow.currentChooseLabel.text())[5])
+        checkArgsWindow.model = posterArngModel
 
     for i in [1, 2, 3, 4]:
         exec(f"""
@@ -64,6 +64,13 @@ chooseTemplateWindow.temp{i}Button.toggled.connect(
     lambda tempChoosed: chooseTemplateWindow.currentChooseLabel.setText("当前选择：{i}")
 )
 """)
-    chooseTemplateWindow.continueButton.clicked.connect(lambda: checkArgsWindow.showWith(setTemplateInfo))
+    chooseTemplateWindow.continueButton.clicked.connect(lambda: checkArgsWindow.showWith(setTemplateInfoAndSubmitModel))
 
+    ##### checkArgsWindow method #####
+    def showFinalPoster():
+        global posterArngModel
+        finalWin = PosterResultWindowUI(model=posterArngModel)
+        finalWin.show()
+    checkArgsWindow.continueButton.clicked.connect(showFinalPoster)
+    
     sys.exit(app.exec_())
